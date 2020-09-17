@@ -1,0 +1,40 @@
+* {margin: 0; padding: 0;}
+
+html{
+    font-family: 'Work Sans', sans-serif;
+}
+
+#page-title{
+    text-align: center;
+    padding: 50px;
+}
+
+.container{
+    width: max-content;
+    /*max-width: 1000px;*/
+    background: lightpink;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+
+    /*
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+
+
+    TRBL
+    Top - Right - Bottom - Left
+
+    */
+}
+
+.container img{
+    width: 300px;
+    display: block;
+    margin: 30px;
+
+}
