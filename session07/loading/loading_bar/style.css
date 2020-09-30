@@ -1,0 +1,59 @@
+html{
+    font-family: 'Comic Sans MS';
+}
+
+a{
+    color:white
+}
+
+.color{
+    background-color: white;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.box{
+    position: absolute;
+    padding: 0px;
+    margin: 50px 0px 50px 500px;
+    display:flex;
+    background: darkblue;
+    width: 1400px;
+    height: 2000px;
+    animation-name: stretch;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes stretch {
+    from {
+        width: 0px;
+        height: 0px;
+        background-color: red;
+        transform: rotate(0deg);
+    }
+
+    to {
+        width: 1400px;
+        height: 500px;
+        background-color: darkblue;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color {
+    from {
+        background-color: darkblue;
+
+    }
+
+    to {
+        background-color: blue;
+
+    }
+}

@@ -1,0 +1,42 @@
+html{
+    font-family: 'Comic Sans MS';
+}
+
+.circle{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    bottom: 0px;
+    left: 400px;
+    padding: 0px;
+    margin: 100px;
+    display:flex;
+    background: white;
+    width: 200px;
+    height: 200px;
+    border: solid white;
+    border-radius: 50%;
+    animation-name: stretch;
+    animation-duration: 15s;
+    animation-timing-function: ease;
+}
+
+@keyframes stretch {
+    from {
+        width: 0px;
+        height: 0px;
+        transform: skewX(0deg);
+        background-color: red;
+        border-color: red;
+
+    }
+
+    to{
+        width: 200px;
+        height: 200px;
+        transform: skewX(180deg);
+        background-color: blue;
+        border-color: blue;
+
+    }
+}
