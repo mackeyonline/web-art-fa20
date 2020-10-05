@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+font-family: 'Piazzolla', serif;
+font-family: 'Sarpanch', sans-serif;
+*/
+
+html{
+    font-family: 'Piazzolla', serif;
+}
+
+header{
+    
+    width: clamp(200px, 30vw, 400px);
+    height: 100vh;
+    background: lightblue;
+
+}
+
+.sidebar-navigation{
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
