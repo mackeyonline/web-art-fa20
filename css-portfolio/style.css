@@ -6,14 +6,17 @@
 
 
 html{
-    font-family: Arial;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 header{
     padding: 10vmin;
-    background: #0008;
+    background:maroon;
+    border: 20px red solid;
+    border-radius: 50px;
     margin-bottom: 2vmin;
     text-align: center;
+    color: white;
 }
 
 header h1{
@@ -25,13 +28,18 @@ header h1{
      max-width: 1200px;
      height: 100vh;
      margin: 0 auto;
+
+
 }
 
 .gallery{
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .gallery__item{
     margin: 2vmin;
+
 }
