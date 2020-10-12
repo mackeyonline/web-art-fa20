@@ -1,7 +1,21 @@
-html{
-    font-family: 'Roboto', sans-serif;
+@font-face{
+    font-family: 'Gingham';
+    src: url('Gingham.woff2') format('woff2');
 }
 
-@font-face{
-    
+html{
+    font-family: 'Gingham', sans-serif;
+    padding: 50px;
+}
+
+h1{
+    font-variation-settings: "wght" 900, "wdth" 200;
+    font-size: 100px;
+
+}
+
+p{
+    font-variation-settings: "wght" 100, "wdth" 100;
+    font-size: 20px;
+
 }
