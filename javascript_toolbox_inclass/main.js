@@ -5,10 +5,14 @@ $(document).ready(function(){
         console.log("i was clicked!, but in jquery");
         printHello();
         $('body').css('background', 'purple');
-        $('#box').css('font-size', `${fontSize}px` );
-        fontSize++;
+        // $('#box').css('font-size', `${fontSize}px` );
+
+        $(this).css('font-size', fontSize);
+        fontSize = fontSize + 10;
+
+        // fontSize++;
         $('#box').css('font-family', "Comic Sans MS");
-        $('#box').css('color', 'red');
+        $('#box').css('color', '#0000ff');
     })
 
 
