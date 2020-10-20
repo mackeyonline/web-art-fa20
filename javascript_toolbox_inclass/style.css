@@ -4,8 +4,11 @@ h1{
 
 
 
-.box{
+#box{
     width: 20vmin;
     height: 20vmin;
     background: lightgray;
+    margin: 20px;
+    position: absolute;
+    text-align: justify;
 }
