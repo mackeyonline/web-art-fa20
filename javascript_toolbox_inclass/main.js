@@ -13,6 +13,8 @@ $(document).ready(function(){
         // fontSize++;
         $('#box').css('font-family', "Comic Sans MS");
         $('#box').css('color', '#0000ff');
+
+        $("#box").addClass('rotate');
     })
 
 
@@ -41,6 +43,24 @@ $(document).ready(function(){
 
 
     })
+
+    setInterval(function(){
+        let coolBox = `<div class="cool-box></div>`;
+        $('body').append(coolBox);
+
+        let randomR = Math.floor(Math.random() * 256);
+        let randomG = Math.floor(Math.random() * 256);
+        let randomB = Math.floor(Math.random() * 256);
+
+        $('.cool-box').css('background', `rgb(${randomR}, ${randomG}, ${randomB})`)
+
+
+    }, 5000)
+
+    setTimeout(function(){
+
+
+    }, 3000)
 
 
 

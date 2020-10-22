@@ -11,12 +11,17 @@ h1{
     margin: 20px;
     position: absolute;
     text-align: justify;
+
+}
+
+.rotate{
+    animation: rotateBox 2s infinite linear;
 }
 
 .cool-box{
     width: 100px;
     height: 100px;
-    background: purple;
+    background: rgb(0, 0, 255);
     display: inline-block;
     margin: 5px;
 }
@@ -30,4 +35,9 @@ h1{
 .some-text{
     position: absolute;
     
+}
+
+@keyframes rotateBox{
+    from { transform: rotateZ(0deg);}
+    to { transform: rotateZ(360deg);}
 }
