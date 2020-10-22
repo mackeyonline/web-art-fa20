@@ -52,10 +52,10 @@ $(document).ready(function(){
         let randomG = Math.floor(Math.random() * 256);
         let randomB = Math.floor(Math.random() * 256);
 
-        $('.cool-box').css('background', `rgb(${randomR}, ${randomG}, ${randomB})`)
+        $('.cool-box:last-child').css('background', `rgb(${randomR}, ${randomG}, ${randomB})`)
 
 
-    }, 5000)
+    }, 100)
 
     setTimeout(function(){
 
