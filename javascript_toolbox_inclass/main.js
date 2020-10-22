@@ -16,6 +16,33 @@ $(document).ready(function(){
     })
 
 
+    // Mouse wheel event: trigger aan effect when user scrolls
+    let shouldAddText = true;
+    $(document).on('wheel', function(){
+        //console.log("scrolling happened!");
+
+        let coolBox = `<div class="cool-box"></div>`;
+
+        let amountScrolled = $(document).scrollTop()
+
+        console.log("scroll: " + amountScrolled);
+
+        if(amountScrolled > 1000 && shouldAddText == true) {
+            $('body').css('background', 'pink');
+            let p = `<p class="some-text">""""someText""""</p>`;
+
+            $('body').append(p)
+            $('some-text').css('top', `${amountScrolled + 400}px`);
+            shouldAddText = false;
+
+        }
+
+        $('body').append(coolBox);
+
+
+    })
+
+
 
 
     // call the function

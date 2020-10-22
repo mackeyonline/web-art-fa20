@@ -12,3 +12,22 @@ h1{
     position: absolute;
     text-align: justify;
 }
+
+.cool-box{
+    width: 100px;
+    height: 100px;
+    background: purple;
+    display: inline-block;
+    margin: 5px;
+}
+
+.space-filler{
+    width: 20vw;
+    height: 500vh;
+    background: lightblue;
+}
+
+.some-text{
+    position: absolute;
+    
+}
