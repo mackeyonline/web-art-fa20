@@ -1,0 +1,30 @@
+body{
+    font-family: 'Grenze Gotisch', cursive;
+    color: pink;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    animation: color-change 10s infinite;
+
+}
+
+.box{
+    width: 375px;
+    height: 250px;
+    margin: auto;
+    padding: 50px;
+    background: white;
+
+}
+
+
+  
+  @keyframes color-change {
+    0% { color: lightgray; }
+    25% { color: grey; }
+    50% { color: black; }
+    75% { color: grey; }
+    100% { color: lightgray; }
+  }
