@@ -1,12 +1,16 @@
 $(document).ready(function(){
 
-    let fontSize = 40;
+    var count = 0;
+    let fontSize = 80;
     $(window).on("click", function(){
         console.log("i was clicked!, but in jquery");
         printHello();
         $('body').css('background', 'white');
         $('body').css('color', 'black');
-        $('.box').html('src="images/a2.jpg',);
+        count++;
+        
+
+        
         // $('#box').css('font-size', `${fontSize}px` );
 
         //$(this).css('font-size', fontSize);
@@ -20,7 +24,28 @@ $(document).ready(function(){
         //$("#box").addClass('rotate');
     })
 
-    let box = document.getElementById("box");
+    var Array = ['images/a1.jpg', 'images/a2.jpg', 'images/a3.jpg', 'images/a4.jpg']
+    //var count = 0;
+
+
+    $('#box').on({
+        'click': function(){
+            $('img').attr('src','images/a2.jpg');
+            //count++;
+
+        }
+
+    });
+
+    //let box = document.getElementById("box");
+
+    //$('img').on('click', function(){
+        
+    //    var image = 
+
+        // execute your image swap code
+    
+    //});
 
 
 

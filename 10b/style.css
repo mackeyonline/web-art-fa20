@@ -1,23 +1,32 @@
 body{
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Red Rose', cursive;
     color: pink;
+    background: whie;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
     animation: color-change 10s infinite;
 
 }
 
-.box{
+#box{
     width: 375px;
     height: 250px;
     margin: auto;
     padding: 50px;
-    background: white;
 
 }
+
+/*#imagez{
+  width: 375px;
+  height: 250px;
+  margin: auto;
+  padding: 50px;
+  background: white;
+
+}*/
 
 
   
