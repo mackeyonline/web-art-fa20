@@ -24,7 +24,7 @@ $(document).ready(function(){
         //$("#box").addClass('rotate');
     })
 
-    var Array = ['images/a1.jpg', 'images/a2.jpg', 'images/a3.jpg', 'images/a4.jpg']
+    var Array = ['images/a1.jpg', 'images/a2.jpg', 'images/a3.jpg', 'images/a4.jpg', 'images/a5.jpg', 'images/a6.jpg', 'images/a7.jpg', 'images/a8.jpg', 'images/a9.jpg', 'images/a10.jpg', 'images/a11.jpg', 'images/a12.jpg', 'images/a13.jpg', 'images/a14.jpg', 'images/a15.jpg', 'images/a16.jpg']
     //var count = 0;
 
 
