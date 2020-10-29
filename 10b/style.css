@@ -50,10 +50,15 @@ h2{
   width: 50%;
 }
 
-/*.cursor{
-  width: 20px;
-  height: 20px;
-  border: 1px solid white;
+.wrapper{
+  cursor: url(https://cur.cursors-4u.net/holidays/hol-1/hol35.cur), default;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+/*.wrapper:hover{
+  cursor: url("images/knife.svg"), default;
 }*/
 
 /*#imagez{
