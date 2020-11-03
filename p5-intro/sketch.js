@@ -4,8 +4,9 @@ let y;
 let c;
 
 function setup() {
-  createCanvas(400, 400);
-  background (255, 0, 0);
+  let cnv = createCanvas(windowWidth, windowHeight);
+  cnv.parent("#sketch-parent");
+  background (0);
   c = color(random(255), 50,);
   
   //initialize variables (give them values)
@@ -14,11 +15,16 @@ function setup() {
   
 }
 
+function windowResized(){
+    resizeCanvas (windowWidth, windowHeight);
+    background(0);
+}
+
 function draw() {
-  //background(127, 0, 127);
+  background(0, 20);
   
-  fill(c);
-  ellipse(x, y, 20, 20);
+  fill(x, y, x/y);
+  ellipse(mouseX, mouseY, 20, 20);
   
   //x = x + 1;
   x+=random(10);
