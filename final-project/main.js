@@ -24,7 +24,7 @@ function setup() {
   
   
   qrcode = new QRCode("qrcode");
-  frameRate(1);
+  //frameRate(1);
   
 //   makeCode();
 } 
