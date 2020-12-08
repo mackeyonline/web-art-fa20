@@ -16,3 +16,14 @@ html, body {
 
   }
   
+canvas {
+  display: block;
+}
+
+/*
+#container {
+  display: fixed;
+  left: 0;
+  top: 0;
+}
+*/

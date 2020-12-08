@@ -8,82 +8,154 @@ let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPOQRSTUVWXYZ01234567890_-.
 
 let websites = ["https://google.com"]
 
-function setup() { 
-  createCanvas(750, 750);
-  
- 
-  div = createDiv("");
-  div.id("qrcode");
-  
-  div.style("width", "256px");
-  div.style("height", "256px");
-  div.style("padding", "2px");
-  div.style("background-color", "grey");
-  div.position(0,0);
-  div.center();
-  
-  
-  qrcode = new QRCode("qrcode");
-  //frameRate(1);
-  
-//   makeCode();
-} 
+// let qrOptions = {
+//   text: "test",
+//   width: 128,
+//   height: 128,
+//   colorDark : "#000000",
+//   colorLight : "#ffffff",
+//   correctLevel : QRCode.CorrectLevel.H
+// }
 
-function draw() { 
-//  background(255,0,0);
+// qrcode = new QRCode(document.getElementById("container"), qrOptions);
+
+
+setInterval(function(){
+  
+  
   let randomURL = "https://www.";
-  let randomLength = Math.floor(random(2, 100));
+  let randomLength = Math.floor(Math.random()*98 + 2);
   
   for(let i = 0; i < randomLength; i++) {
-    randomURL += chars[Math.floor(random(chars.length))]
+    randomURL += chars[Math.floor(Math.random()*(chars.length))]
   }
   //console.log(randomURL);
   randomURL += ".com"
-  qrcode.makeCode(randomURL);
-  randomURL="";
-}
-
-function makeCode(_url) {      
-    
-    
-    qrcode.makeCode(_url);
-}
-
-
-//function keyPressed() {
+  let randomSize = Math.floor(Math.random()*700 + 100)
   
-  //if(key == '0') {
-    
-    //div.remove();
-    
-    //div = createDiv("");
-    //div.id("qrcode");
-    
-    //div.position(0,0);
-    //div.center();
-  
-  	//qrcode = new QRCode("qrcode");
-  //}
-  //else if (key == '1') {
-    //makeCode();
-  //}
-//}
 
-function mouseClicked() {
-  
-  if(clicked == true) {
-    
-    div.remove();
-    
-    div = createDiv("");
-    div.id("qrcode");
-    
-    div.position(0,0);
-    div.center();
-  
-  	qrcode = new QRCode("qrcode");
+  qrOptions = {
+    text: randomURL,
+    width: randomSize,
+    height: randomSize,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
   }
-  else if (clicked == false) {
-    makeCode();
-  }
-}
+  qrcode = new QRCode(document.getElementById("container"), qrOptions);
+
+
+
+  $('#container img:last-child').css("position", "absolute").css("left", Math.random() * window.innerWidth).css("top", Math.random() * window.innerHeight);
+
+
+
+    
+
+//qrcode.makeCode();
+randomURL="";
+
+}, 1000);
+
+
+
+
+////////// P5.JS CODE //////////
+
+// function setup() { 
+//   let cnv = createCanvas(innerWidth, innerHeight);
+//   cnv.parent("#sketch-parent");
+  
+ 
+//   div = createDiv("");
+//   div.id("qrcode");
+  
+//   div.style("width", "256px");
+//   div.style("height", "256px");
+//   div.style("padding", "2px");
+//   div.style("background-color", "grey");
+//   div.position(0,0);
+//   div.center();
+  
+  
+//   qrcode = new QRCode("qrcode");
+//   //frameRate(1);
+  
+// //   makeCode();
+// }
+
+
+
+// function windowResized() {
+//   resizeCanvas(innerWidth, innerHeight);
+// }
+
+// function draw() { 
+// //  background(255,0,0);
+//   let randomURL = "https://www.";
+//   let randomLength = Math.floor(random(2, 100));
+  
+//   for(let i = 0; i < randomLength; i++) {
+//     randomURL += chars[Math.floor(random(chars.length))]
+//   }
+//   //console.log(randomURL);
+//   randomURL += ".com"
+//   qrcode.makeCode(randomURL);
+//   randomURL="";
+// }
+
+// function makeCode(_url) {      
+    
+  
+//   let randomSize = Math.floor(Math.random()*700 + 100);
+
+//   let qrOptions = {
+//     text: _url,
+//     width: randomSize,
+//     height: randomSize,
+//     colorDark : "#000000",
+//     colorLight : "#ffffff",
+//     correctLevel : QRCode.CorrectLevel.H
+//   }
+    
+//     qrcode.makeCode("QR Code", qrOptions);
+// }
+
+
+// //function keyPressed() {
+  
+//   //if(key == '0') {
+    
+//     //div.remove();
+    
+//     //div = createDiv("");
+//     //div.id("qrcode");
+    
+//     //div.position(0,0);
+//     //div.center();
+  
+//   	//qrcode = new QRCode("qrcode");
+//   //}
+//   //else if (key == '1') {
+//     //makeCode();
+//   //}
+// //}
+
+// function mouseClicked() {
+  
+//   if(clicked == true) {
+    
+//     div.remove();
+    
+//     div = createDiv("");
+//     div.id("qrcode");
+    
+//     div.position(0,0);
+//     div.center();
+  
+//   	qrcode = new QRCode("qrcode");
+//   }
+//   else {
+//     makeCode();
+//   }
+// }
