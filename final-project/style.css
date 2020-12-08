@@ -1,9 +1,9 @@
 * {margin: 0; padding: 0;}
 
-/*h1{
+h1{
     font-family: Verdana;
     font-size: 50px;
-}*/
+}
 
 html, body {
     margin: 0;
@@ -16,9 +16,13 @@ html, body {
 
   }
   
-canvas {
-  display: block;
+/* canvas {
+  display: none;
 }
+
+img {
+  display: none;
+} */
 
 /*
 #container {
@@ -27,3 +31,11 @@ canvas {
   top: 0;
 }
 */
+
+.invisible-corner {
+  position: absolute;
+  background: white;
+  width: 800px;
+  height: 800px;
+  z-index: 1;
+}

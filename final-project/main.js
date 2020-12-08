@@ -23,6 +23,22 @@ let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPOQRSTUVWXYZ01234567890_-.
 setInterval(function(){
   
   
+  //generateRandomQRCode();
+
+  
+
+
+
+    
+
+
+}, 10);
+
+
+$(window).click(generateRandomQRCode);
+
+
+function generateRandomQRCode() {
   let randomURL = "https://www.";
   let randomLength = Math.floor(Math.random()*98 + 2);
   
@@ -46,18 +62,8 @@ setInterval(function(){
 
 
 
-  $('#container img:last-child').css("position", "absolute").css("left", Math.random() * window.innerWidth).css("top", Math.random() * window.innerHeight);
-
-  
-
-
-
-    
-
-//qrcode.makeCode();
-randomURL="";
-
-}, 1000);
+  $('#container img:last-child').css("position", "absolute").css("left", Math.random() * window.innerWidth).css("top", Math.random() * window.innerHeight).css("z-index", "5");
+}
 
 
 
