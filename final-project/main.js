@@ -6,7 +6,7 @@ let div;
 
 let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPOQRSTUVWXYZ01234567890_-."
 
-let websites = ["https://google.com"]
+//let websites = ["https://google.com"]
 
 // let qrOptions = {
 //   text: "test",
@@ -47,6 +47,8 @@ setInterval(function(){
 
 
   $('#container img:last-child').css("position", "absolute").css("left", Math.random() * window.innerWidth).css("top", Math.random() * window.innerHeight);
+
+  
 
 
 
