@@ -16,7 +16,7 @@ let div;
 
 let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPOQRSTUVWXYZ01234567890_-."
 
-let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+// let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 
 
 
@@ -74,6 +74,8 @@ function generateRandomQRCode() {
     randomScaleY = Math.random()+.4;
 }
 
+let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+
 
 
   
@@ -82,7 +84,7 @@ function generateRandomQRCode() {
     text: randomURL,
     width: randomSize,
     height: randomSize,
-    colorDark : "#000000",
+    colorDark :randomColor,
     colorLight : "#ffffff",
     correctLevel : QRCode.CorrectLevel.H
   }
