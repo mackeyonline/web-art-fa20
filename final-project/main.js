@@ -6,6 +6,12 @@ let div;
 
 let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPOQRSTUVWXYZ01234567890_-."
 
+let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+
+
+
+
+
 //let websites = ["https://google.com"]
 
 // let qrOptions = {
@@ -19,20 +25,19 @@ let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPOQRSTUVWXYZ01234567890_-.
 
 // qrcode = new QRCode(document.getElementById("container"), qrOptions);
 
-
 setInterval(function(){
   
   
-  //generateRandomQRCode();
+  generateRandomQRCode();
 
-  
+
 
 
 
     
 
 
-}, 10);
+}, 100);
 
 
 $(window).click(generateRandomQRCode);
@@ -48,6 +53,19 @@ function generateRandomQRCode() {
   //console.log(randomURL);
   randomURL += ".com"
   let randomSize = Math.floor(Math.random()*700 + 100)
+  let dimensionDecider = Math.random()*10;
+
+  if(dimensionDecider < 6) {
+    
+    randomScaleX =  1;
+    randomScaleY =  1;
+} else {
+    randomScaleX = Math.random()+.6;
+    randomScaleY = Math.random()+.4;
+}
+
+
+
   
 
   qrOptions = {
@@ -60,9 +78,15 @@ function generateRandomQRCode() {
   }
   qrcode = new QRCode(document.getElementById("container"), qrOptions);
 
+  
 
 
-  $('#container img:last-child').css("position", "absolute").css("left", Math.random() * window.innerWidth).css("top", Math.random() * window.innerHeight).css("z-index", "5");
+  $('#container img:last-child').css("position", "absolute")
+                                .css("left", Math.random() * window.innerWidth).css("top", Math.random() * window.innerHeight)
+                                .css("z-index", "5")
+                                .css("transform", `scale(${randomScaleX}, ${randomScaleY})`)
+
+
 }
 
 
