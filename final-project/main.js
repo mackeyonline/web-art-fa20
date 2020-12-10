@@ -1,4 +1,14 @@
 //console.log("hello")
+//
+
+//    SPECIAL THANK YOU
+//      to Doug Rosman for the help with this creation
+
+
+
+
+
+//
 
 
 let qrcode; 
