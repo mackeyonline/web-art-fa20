@@ -76,6 +76,16 @@ function generateRandomQRCode() {
 
 let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 
+// randomColor({count: 3});
+
+// document.querySelector(".palette div:nth-child(1)")
+//   .style.backgroundColor = colors[0];
+
+// document.querySelector(".palette div:nth-child(2)")
+//   .style.backgroundColor = colors[1];
+
+// document.querySelector(".palette div:nth-child(3)")
+//   .style.backgroundColor = colors[2];
 
 
   
@@ -84,7 +94,8 @@ let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
     text: randomURL,
     width: randomSize,
     height: randomSize,
-    colorDark :randomColor,
+    // colorDark :randomColor,
+    colorDark :"#000000",
     colorLight : "#ffffff",
     correctLevel : QRCode.CorrectLevel.H
   }
